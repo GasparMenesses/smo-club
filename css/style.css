@@ -1,0 +1,384 @@
+body {
+    /* background-color: rgb(174, 185, 194);     */
+    background-image: url(../images/bg-images/pexels-jess-loiterton-4321836.jpg);
+}
+
+.line {
+    width: 60%;
+    position: absolute;
+    top: 70px;
+    left: 300px;
+
+}
+
+
+/* index phone */
+
+@media (max-width:800px) {
+
+    /* header */
+
+    /* nav bar */
+
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;
+        background-color: rgba(0, 0, 0, 0.616) !important;
+    }
+
+    .nav-link {
+        color: aliceblue;
+    }
+
+    .nav-item a {
+        color: aliceblue !important;
+    }
+
+    .navbar-brand {
+        color: aliceblue !important;
+    }
+
+    /* main */
+
+    .logo .logo-img {
+        width: 50%;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .separador {
+        margin: 20px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 20%;
+
+    }
+
+    .carousel {
+        width: 60%;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /* footer */
+
+    .line2 {
+        position: absolute;
+        top: 92%;
+        width: 92%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .smo-footer-position .smofooter {
+        font-family: 'Merriweather', serif;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        top: 96%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Nosotros */
+
+    .nosotrostext {
+
+        font-family: 'Merriweather', serif;
+        font-size: 22px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.84);
+        margin-top: 20%;
+        margin: 10%;
+
+    }
+
+    .spotifybar {
+       position: relative;
+       display: block;
+       margin: 0 auto;
+       width: 80%;
+       height: 370px;
+       
+    }
+
+    /* skates */
+
+
+    .grid-skates {
+        display: flex;
+        flex-direction: column 3;
+        justify-content: center;
+        align-items: flex-end;
+
+    }
+
+    .skate {
+        width: 28%;
+        padding: 3px;
+
+    }
+
+
+    .textoshapes {
+        font-family: 'Merriweather', serif;
+        position: relative;
+        text-align: center;
+        margin-top: 30%;
+        margin-bottom: 30%;
+
+    }
+
+    .shapes {
+        font-size: 95%;
+    }
+
+    .laminas {
+        font-size: 85%;
+    }
+
+     /* spots */
+
+     .map-grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .map-grid {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .map {
+        height: 270px;
+        width: 100%;
+        border-radius: 6px;
+        padding-top: 30%;
+    }
+
+    .texto-spots-container {
+        display: grid;
+        position: absolute;
+        left: 20%;
+        bottom: 34%;
+        
+    }
+
+
+    .texto-spots-up{
+        font-family: 'Merriweather', serif;
+        text-align: start;
+        font-size: 22px;
+        padding-top: 230px;
+
+    }
+
+}
+
+
+/* index web */
+
+@media (min-width:801px) {
+
+    /* header */
+
+    .bg-body-tertiary {
+        --bs-bg-opacity: 1;
+        background-color: rgba(0, 0, 0, 0.616) !important;
+    }
+
+    .nav-link {
+        color: aliceblue;
+    }
+
+    .nav-item a {
+        color: aliceblue !important;
+    }
+
+    .navbar-brand {
+        color: aliceblue !important;
+    }
+
+    /* main */
+
+    .logo .logo-img {
+        width: 15%;
+        position: absolute;
+        top: 15%;
+        left: 5%;
+
+    }
+
+    .carousel {
+        width: 20%;
+        position: absolute;
+        top: 40%;
+        left: 68%;
+
+    }
+
+     /* footer */
+
+     .line2 {
+        position: absolute;
+        top: 92%;
+        width: 92%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .smo-footer-position .smofooter {
+        font-family: 'Merriweather', serif;
+        font-size: 12px;
+        position: absolute;
+        left: 50%;
+        top: 97%;
+        transform: translate(-50%, -50%);
+    }
+
+     /* Nosotros */
+
+     .nosotrostext {
+        position: absolute;
+        top: 20%;
+        left: 29%;
+        font-family: 'Merriweather', serif;
+        font-size: 22px;
+        text-align: center;
+        display: block;
+        width: 600px;
+        color: rgba(0, 0, 0, 0.84);
+
+    }
+
+    .spotifybar {
+       position: relative;
+       display: block;
+       margin: 0 auto;
+       top: 50vh;
+       width: 80%;
+       
+    }
+
+    /* skates */
+
+    .grid-skates {
+        display: flex;
+        flex-direction: column 3;
+        margin-left: 14%;
+        position: relative;
+        bottom: 6vh;
+
+    }
+
+    .skate {
+        width: 22vh;
+        padding: 15px
+
+    }
+
+
+    .textoshapes {
+        font-family: 'Merriweather', serif;
+        text-align: right;
+        margin-right: 5%;
+        position: relative;
+        top: 35vh;
+
+    }
+
+    .shapes {
+        font-size: 30px;
+    }
+
+    .laminas {
+        font-size: 20px;
+    }
+
+    /* spots */
+
+    .map-grid-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .map-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+
+    .map {
+        width: 80%;
+        height: 45vh;
+        margin: 8vh;
+        border-radius: 6px;
+    }
+
+    .texto-spots-container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 12vh;
+        margin: 0 22vh;
+    }
+
+
+    .texto-spots-up{
+        font-family: 'Merriweather', serif;
+        flex-direction: column 1;
+        text-align: start;
+        font-size: 22px;
+        padding: 0px;
+
+    }
+
+
+    /* camisetas / buzos*/
+
+    .contenedor-grids {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        text-align: center;
+
+    }
+
+    .grids-ind {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        
+
+    }
+
+    .grids-ind div img {
+        width: 52%;
+        object-fit: cover;
+        
+    }
+
+    .buzo-blanco {
+        position: relative;
+        width: ;
+    }
+
+   
+}
