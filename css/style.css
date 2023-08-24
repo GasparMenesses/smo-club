@@ -103,6 +103,15 @@ body {
 
     }
 
+    
+    .redes .instagram {
+        width: 4vh;
+        position: absolute;
+        left: 87%;
+        bottom: 88%;
+
+    }
+
     .spotifybar {
        position: relative;
        display: block;
@@ -186,6 +195,49 @@ body {
 
     }
 
+    
+    /* camisetas / buzos*/
+
+    .contenedor-grids {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        text-align: center;
+
+    }
+
+    .grids-ind {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+
+    }
+
+    .grids-ind div img {
+        width: 52%;
+        object-fit: cover;
+        
+    }
+
+    /* gorros */
+
+    .gorros-grid {
+        display: grid   ;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        text-align: center;
+        
+    }
+
+    .gorro img {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        height: 20vh;
+       
+    }
+
 }
 
 
@@ -226,7 +278,7 @@ body {
         width: 20%;
         position: absolute;
         top: 40%;
-        left: 68%;
+        left: 60%;
 
     }
 
@@ -257,7 +309,7 @@ body {
         top: 20%;
         left: 29%;
         font-family: 'Merriweather', serif;
-        font-size: 22px;
+        font-size: 26px;
         text-align: center;
         display: block;
         width: 600px;
@@ -265,13 +317,22 @@ body {
 
     }
 
+    .redes .instagram {
+        width: 15vh;
+        position: absolute;
+        left: 70%;
+        bottom: 66%;
+
+
+    }
+
     .spotifybar {
        position: relative;
        display: block;
        margin: 0 auto;
-       top: 50vh;
+       top: 40vh;
        width: 80%;
-       
+       height: 380px;
     }
 
     /* skates */
@@ -375,9 +436,21 @@ body {
         
     }
 
-    .buzo-blanco {
-        position: relative;
-        width: ;
+    /* gorros */
+
+    .gorros-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        text-align: center;
+    }
+
+    .gorro img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: 35vh;
+        padding: 15%;
     }
 
    
