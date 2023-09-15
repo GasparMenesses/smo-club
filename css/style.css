@@ -22,7 +22,7 @@ body {
   }
   /* main */
   .logo .logo-img {
-    width: 50%;
+    width: 30%;
     position: absolute;
     top: 25%;
     left: 50%;
@@ -37,9 +37,9 @@ body {
     height: 20%;
   }
   .carousel {
-    width: 60%;
+    width: 40%;
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -47,20 +47,40 @@ body {
     align-items: center;
   }
   /* footer */
-  .line2 {
+  .redes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8vh;
     position: absolute;
-    top: 92%;
-    width: 92%;
+    top: 88%;
+    justify-self: center;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .smo-footer-position .smofooter {
-    font-family: "Merriweather", serif;
-    font-size: 12px;
-    position: absolute;
-    left: 50%;
-    top: 96%;
-    transform: translate(-50%, -50%);
+  .instagram {
+    bottom: 6px;
+  }
+  .instagram img {
+    width: 70px;
+    filter: invert(90%);
+  }
+  .instagram :hover {
+    filter: invert(80%);
+  }
+  .whatsapp img {
+    width: 70px;
+    filter: invert(90%);
+  }
+  .whatsapp :hover {
+    filter: invert(80%);
+  }
+  .mail {
+    margin-top: 17px;
+  }
+  .mail img {
+    width: 40px;
+    filter: invert(90%);
   }
   /* Nosotros */
   .nosotrostext {
@@ -145,9 +165,13 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
+  .grids-ind div {
+    transition: transform 0.4s;
+  }
   .grids-ind div img {
     width: 52%;
     object-fit: cover;
+    transform: scale(1.1);
   }
   /* gorros */
   .gorros-grid {
