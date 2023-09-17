@@ -1,0 +1,30 @@
+/* header phone - tablet*/
+@media (max-width:800px) {
+    /* header */
+
+/* nav bar */
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, 0.616) !important;
+  }
+
+.nav-item a  {
+    color: aliceblue !important;
+  }
+
+}
+
+
+/* header web */
+@media (min-width:801px) {
+    /* header */
+    .bg-body-tertiary {
+      --bs-bg-opacity: 1;
+      background-color: rgba(0, 0, 0, 0.616) !important;
+    }
+  
+    .nav-link, .nav-item a, .navbar-brand {
+      color: aliceblue !important;
+    }
+}

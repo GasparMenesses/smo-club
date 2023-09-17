@@ -2,14 +2,7 @@ body {
   background-image: url(../images/bg-images/pexels-jess-loiterton-4321836.jpg);
 }
 
-.line {
-  width: 60%;
-  position: absolute;
-  top: 70px;
-  left: 300px;
-}
-
-/* index phone - tablet*/
+/* header phone - tablet*/
 @media (max-width: 800px) {
   /* header */
   /* nav bar */
@@ -17,10 +10,23 @@ body {
     --bs-bg-opacity: 1;
     background-color: rgba(0, 0, 0, 0.616) !important;
   }
+  .nav-item a {
+    color: aliceblue !important;
+  }
+}
+/* header web */
+@media (min-width: 801px) {
+  /* header */
+  .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, 0.616) !important;
+  }
   .nav-link, .nav-item a, .navbar-brand {
     color: aliceblue !important;
   }
-  /* main */
+}
+/* main phone */
+@media (max-width: 800px) {
   .logo .logo-img {
     width: 30%;
     position: absolute;
@@ -28,59 +34,15 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .separador {
-    margin: 20px;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 20%;
-  }
   .carousel {
-    width: 40%;
+    width: 50%;
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  /* footer */
-  .redes {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8vh;
-    position: absolute;
-    top: 88%;
-    justify-self: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .instagram {
-    bottom: 6px;
-  }
-  .instagram img {
-    width: 70px;
-    filter: invert(90%);
-  }
-  .instagram :hover {
-    filter: invert(80%);
-  }
-  .whatsapp img {
-    width: 70px;
-    filter: invert(90%);
-  }
-  .whatsapp :hover {
-    filter: invert(80%);
-  }
-  .mail {
-    margin-top: 17px;
-  }
-  .mail img {
-    width: 40px;
-    filter: invert(90%);
   }
   /* Nosotros */
   .nosotrostext {
@@ -91,25 +53,18 @@ body {
     margin-top: 20%;
     margin: 10%;
   }
-  .redes .instagram {
-    width: 3vh;
-    position: relative;
-    left: 87%;
-    margin: 5px;
-  }
   .spotifybar {
     position: relative;
-    display: block;
-    margin: 0 auto;
     width: 80%;
-    height: 370px;
+    height: 15rem;
+    left: 10%;
+    bottom: 2%;
   }
   /* skates */
   .grid-skates {
     display: flex;
     flex-direction: column 3;
     justify-content: center;
-    align-items: flex-end;
     position: relative;
     bottom: 8vh;
     justify-content: space-between;
@@ -117,8 +72,9 @@ body {
     margin-right: 10%;
   }
   .skate {
+    position: relative;
     width: 10vh;
-    padding: 8px;
+    margin: 10px;
   }
   .textoshapes {
     font-family: "Merriweather", serif;
@@ -135,30 +91,32 @@ body {
   }
   /* spots */
   .map-grid-container {
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 80vh;
+    height: 20vh;
+    margin: 10px;
   }
   .map-grid {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     justify-content: center;
-    margin-top: 5VH;
+    margin-top: 5vh;
   }
   .map {
+    padding: 10px;
     height: 220px;
     width: 100%;
-    border-radius: 6px;
-    padding-top: 10%;
+    border-radius: 3vh;
   }
   /* camisetas / buzos */
   .contenedor-grids {
     display: flex;
     justify-content: center;
-    align-items: center;
+    position: relative;
     height: 90vh;
     text-align: center;
+    padding: 30px;
   }
   .grids-ind {
     display: grid;
@@ -169,6 +127,7 @@ body {
     transition: transform 0.4s;
   }
   .grids-ind div img {
+    margin: 10px;
     width: 52%;
     object-fit: cover;
     transform: scale(1.1);
@@ -187,44 +146,39 @@ body {
     height: 20vh;
   }
 }
-/* index web */
-@media (min-width: 801px) {
-  /* header */
-  .bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: rgba(0, 0, 0, 0.616) !important;
-  }
-  .nav-link, .nav-item a, .navbar-brand {
-    color: aliceblue !important;
-  }
-  /* main */
+@media (min-width: 400px) {
   .logo .logo-img {
+    width: 30%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+  }
+  .carousel {
+    width: 40%;
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* main web */
+@media (min-width: 801px) {
+  .logo .logo-img {
+    z-index: -1;
     width: 15%;
     position: absolute;
     top: 15%;
     left: 5%;
   }
   .carousel {
-    width: 20%;
+    z-index: -10;
+    width: 30%;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 60%;
-  }
-  /* footer */
-  .line2 {
-    position: absolute;
-    top: 92%;
-    width: 92%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .smo-footer-position .smofooter {
-    font-family: "Merriweather", serif;
-    font-size: 12px;
-    position: absolute;
-    left: 50%;
-    top: 97%;
-    transform: translate(-50%, -50%);
   }
   /* Nosotros */
   .nosotrostext {
@@ -247,11 +201,10 @@ body {
   }
   .spotifybar {
     position: relative;
-    display: block;
-    margin: 0 auto;
-    top: 57vh;
     width: 80%;
-    height: 350px;
+    height: 20rem;
+    left: 10%;
+    top: 48vh;
   }
   /* skates */
   .grid-skates {
@@ -330,6 +283,83 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 28vh;
+  }
+}
+/* footer phone - tablet*/
+@media (max-width: 800px) {
+  .redes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    top: 88%;
+    justify-self: center;
+    top: 95%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+  }
+  .instagram {
+    bottom: 6px;
+  }
+  .instagram img {
+    width: 50px;
+    filter: invert(90%);
+  }
+  .instagram img:hover {
+    filter: invert(80%);
+  }
+  .whatsapp img {
+    width: 50px;
+    filter: invert(90%);
+  }
+  .whatsapp img:hover {
+    filter: invert(80%);
+  }
+  .mail {
+    margin-top: 17px;
+  }
+  .mail img {
+    width: 40px;
+    filter: invert(90%);
+  }
+}
+/* footer web */
+@media (min-width: 801px) {
+  .redes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    top: 88%;
+    justify-self: center;
+    top: 90%;
+    left: 70%;
+  }
+  .instagram {
+    top: 0;
+  }
+  .instagram img {
+    width: 60px;
+    filter: invert(90%);
+  }
+  .instagram img:hover {
+    filter: invert(80%);
+  }
+  .whatsapp {
+    position: relative;
+    left: 14vh;
+  }
+  .whatsapp img {
+    width: 60px;
+    filter: invert(90%);
+  }
+  .whatsapp img:hover {
+    filter: invert(80%);
+  }
+  .mail {
+    margin-top: 17px;
+  }
+  .mail img {
+    width: 40px;
+    filter: invert(90%);
   }
 }
 
