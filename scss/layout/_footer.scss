@@ -1,92 +1,80 @@
-/* footer phone - tablet*/
-@media (max-width:800px) { 
+/* footer phone*/
+
+@media (max-width:500px) { 
     
-    .redes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+      .redes{
         position: absolute;
-        top: 88%;
-        justify-self: center;
-        top: 95%; 
-        left: 56%;
-        transform: translate(-50%, -50%);
-      }
-  
-      .instagram{
-        bottom: 6px;
-        img {
-          width: 50px;
-          filter: invert(90%);
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        top: 90%;
+        margin: 10px;
+        a {
+          color: black;
+          text-decoration: none;
+          margin: 0 10px;
+          font-size: 3vh;
           &:hover {
-            filter: invert(80%);
+            transition: 0.15s;
+            transform: scale(1.1);
+            filter: invert(30%);
           }
         }
-      } 
-  
-      .whatsapp {
-        img {
-          width: 50px;
-          filter: invert(90%);
-          &:hover {
-            filter: invert(80%);
-          }
-        }
-      } 
-  
-      .mail {
-        margin-top: 17px;
-        img {
-          width: 40px;
-          filter: invert(90%);
-        }
       }
+    }
+  
 
+  /* footer tablet */
+  @media (min-width:501px) and (max-width:989px) {
+    .redes{
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 8%;
+      top: 90%;
+      margin: 10px;
+        a {
+          color: black;
+          text-decoration: none;
+          margin: 0 10px;
+          font-size: 3vh;
+          &:hover {
+            transition: 0.15s;
+            transform: scale(1.1);
+            filter: invert(30%);
+        }
+    }
+  }
 }
 
-/* footer web */
-@media (min-width:801px) {
-    .redes {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        position: absolute;
-        top: 88%;
-        justify-self: center;
-        top: 90%; 
-        left: 70%;
-        
-      }
-  
-      .instagram{
-        top: 0;
-        img {
-          width: 60px;
-          filter: invert(90%);
-          &:hover {
-            filter: invert(80%);
-          }
-        }
-      } 
-  
-      .whatsapp {
-        position: relative;
-        left: 14vh;
-        img {
-          width: 60px;
-          filter: invert(90%);
-          &:hover {
-            filter: invert(80%);
-          }
-        }
-      } 
-  
-      .mail {
-        margin-top: 17px;
-        img {
-          width: 40px;
-          filter: invert(90%);
+
+
+  /* footer web */
+  @media (min-width:990px) {
+    .redes{
+      position:fixed;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: 8%;
+      top: 95%;
+      a {
+        color: black;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 3vh;
+        &:hover {
+          transition: 0.15s;
+          transform: scale(1.1);
+          filter: invert(30%);
         }
       }
+    }
 
-   
-
-}
+  }
