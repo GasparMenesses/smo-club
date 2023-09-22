@@ -1,39 +1,53 @@
 body {
-  background-image: url(../images/bg-images/pexels-jess-loiterton-4321836.jpg);
-  background-size: 1800px;
-  background-repeat: no-repeat;
+  background-image: url(../../images/bg-images/pexels-jess-loiterton-4321836.jpg);
+  background-size: 2000px;
+}
+
+.navbar-personal {
+  background-color: rgb(47, 46, 54);
+}
+.navbar-personal a {
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+  color: rgba(240, 248, 255, 0.773);
+  margin-right: 3vw;
+}
+.navbar-personal a:hover {
+  color: rgb(240, 248, 255);
+}
+.navbar-personal a:active {
+  transform: scale(1.1);
+  color: rgb(240, 248, 255);
+}
+.navbar-personal .yo {
+  background-color: rgb(47, 46, 54);
+}
+
+.boton {
+  filter: invert(60%);
+  transform: scale(1.05);
 }
 
 .logo .logo-img {
-  width: 22vh;
-  position: absolute;
-  top: 30%;
+  width: 25vh;
+  position: relative;
+  top: 200px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 @media (min-width: 760px) {
   .logo .logo-img {
     left: 80%;
+    width: 25vh;
   }
 }
 
-.carousel {
-  width: 30vh;
-  position: absolute;
-  top: 58vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-}
-@media (min-width: 760px) {
-  .carousel {
-    width: 20vw;
-    min-width: 18vw;
-    position: absolute;
-    top: 50vh;
-    left: 30%;
-  }
+.pasador-fotos {
+  width: 25vw;
+  min-width: 260px;
+  display: block;
+  margin: 10vh auto;
+  z-index: 3;
 }
 
 /* Nosotros */
@@ -49,7 +63,7 @@ body {
 .spotifybar {
   max-height: 50vh;
   min-height: 40vh;
-  position: absolute;
+  position: relative;
   width: 80vw;
   height: 45vh;
   left: 10%;
@@ -62,7 +76,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column 3;
-  margin: 90px 10px 0 10px;
+  margin: 110px 10px 0 10px;
   gap: 10vw;
 }
 .grid-skates .skate {
@@ -77,10 +91,10 @@ body {
   margin-top: 50px;
 }
 .textoshapes .shapes {
-  font-size: 3vh;
+  font-size: 4vh;
 }
 .textoshapes .laminas {
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
 /* spots */
@@ -89,16 +103,18 @@ body {
   display: flex;
   justify-content: center;
   height: 30vw;
-  margin: 10px;
+  margin: 10px 0 500px 0px;
 }
 .map-grid-container .map-grid {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  margin-top: 7%;
+  margin-bottom: 200px;
+  margin-top: 5vh;
 }
 @media (min-width: 990px) {
   .map-grid-container .map-grid {
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 20%;
   }
 }
 .map-grid-container .map-grid .map {
@@ -135,13 +151,17 @@ body {
   .contenedor-grids .grids-ind {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin-top: 10vh;
   }
 }
 .contenedor-grids .grids-ind div img {
   transition: transform 0.4s;
+  position: relative;
+  top: 6vh;
   margin-inline: 8vw;
-  margin-block: 2vh;
-  width: 13vh;
+  margin-block: 1vh;
+  margin-top: 50px;
+  width: 15vh;
 }
 @media (min-width: 760px) {
   .contenedor-grids .grids-ind div img {
@@ -153,13 +173,13 @@ body {
 }
 
 .redes {
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   display: flex;
   justify-content: center;
   gap: 5%;
-  top: 850px;
+  top: 100px;
 }
 .redes a {
   color: black;

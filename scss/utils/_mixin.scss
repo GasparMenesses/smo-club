@@ -16,14 +16,18 @@
     @media (min-width:760px) {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
+        margin-top: 10vh;
     }
 }
 
 @mixin img-grid-indumentaria {
     transition: transform 0.4s;
+    position: relative;
+    top: 6vh;
     margin-inline: 8vw;
-    margin-block: 2vh;
-    width: 13vh;
+    margin-block: 1vh;
+    margin-top: 50px;
+    width: 15vh;
     @media (min-width:760px) {
         transition: transform 0.4s;
         margin-inline: 2vw;

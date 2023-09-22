@@ -1,13 +1,27 @@
-.carousel{
-  .slide{
-    .carousel{
-      .carouse-inner{
-        .carousel-item{
-          a .dropdown-item{
-           
-            }
-          }
-        }
+
+.navbar-personal {
+  background-color: rgb(47, 46, 54) ;
+      a {
+        font-size: 20px;
+        font-family: $Fuente;
+        color: rgba(240, 248, 255, 0.773);
+        margin-right: 3vw;
+      }
+      a:hover {
+        color: rgb(240, 248, 255);
+      }
+      a:active {
+        transform: scale(1.1);
+        color: rgb(240, 248, 255) ;
+      }
+      .yo {
+        background-color: rgb(47, 46, 54);
       }
     }
-  }
+
+    .boton {
+      filter: invert(60%);
+      transform: scale(1.05);
+    }
+
+
