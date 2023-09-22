@@ -1,80 +1,22 @@
-/* footer phone*/
 
-@media (max-width:500px) { 
-    
-      .redes{
-        position: absolute;
-        left: 0;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        gap: 5%;
-        top: 90%;
-        margin: 10px;
-        a {
-          color: black;
-          text-decoration: none;
-          margin: 0 10px;
-          font-size: 3vh;
-          &:hover {
-            transition: 0.15s;
-            transform: scale(1.1);
-            filter: invert(30%);
-          }
-        }
-      }
-    }
-  
-
-  /* footer tablet */
-  @media (min-width:501px) and (max-width:989px) {
-    .redes{
-      position: absolute;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      gap: 8%;
-      top: 90%;
-      margin: 10px;
-        a {
-          color: black;
-          text-decoration: none;
-          margin: 0 10px;
-          font-size: 3vh;
-          &:hover {
-            transition: 0.15s;
-            transform: scale(1.1);
-            filter: invert(30%);
-        }
+.redes{
+  position:absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;  
+  gap: 5%;
+  top: 94%;
+  a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 3vh;
+    &:hover {
+      transition: 0.15s;
+      transform: scale(1.1);
+      filter: invert(30%);
     }
   }
 }
 
-
-
-  /* footer web */
-  @media (min-width:990px) {
-    .redes{
-      position:fixed;
-      left: 0;
-      right: 0;
-      display: flex;
-      justify-content: center;
-      align-items: end;
-      gap: 8%;
-      top: 95%;
-      a {
-        color: black;
-        text-decoration: none;
-        margin: 0 10px;
-        font-size: 3vh;
-        &:hover {
-          transition: 0.15s;
-          transform: scale(1.1);
-          filter: invert(30%);
-        }
-      }
-    }
-
-  }

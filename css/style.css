@@ -6,399 +6,171 @@ body {
   color: azure !important;
 }
 
-/* main phone */
-@media (max-width: 500px) {
+.logo .logo-img {
+  width: 22vh;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 760px) {
   .logo .logo-img {
-    width: 30%;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .carousel {
-    width: 50%;
-    position: absolute;
-    top: 65%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* Nosotros */
-  .nosotrostext {
-    font-family: "Merriweather", serif;
-    font-size: 22px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.84);
-    margin-top: 20%;
-    margin: 10%;
-  }
-  .spotifybar {
-    max-height: 50vh;
-    position: absolute;
-    width: 80vw;
-    height: 45vh;
-    left: 10%;
-  }
-  /* skates */
-  .grid-skates {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column 3;
-    margin-top: 90px;
-    gap: 15%;
-  }
-  .grid-skates .skate {
-    width: 9vh;
-  }
-  .textoshapes {
-    font-family: "Merriweather", serif;
-    position: relative;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 30%;
-  }
-  .textoshapes .shapes {
-    font-size: 3vh;
-  }
-  .textoshapes .laminas {
-    font-size: 2vh;
-  }
-  /* spots */
-  .map-grid-container {
-    display: flex;
-    justify-content: center;
-    height: 20vw;
-    margin: 10px;
-  }
-  .map-grid-container .map-grid {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    margin-top: 5vw;
-  }
-  .map-grid-container .map-grid .map {
-    padding: 10px;
-    height: 25vh;
-    width: 100%;
-    border-radius: 3vh;
-  }
-  /* camisetas / buzos */
-  .contenedor-grids {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-  }
-  .contenedor-grids .grids-ind {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .contenedor-grids .grids-ind div img {
-    transition: transform 0.4s;
-    margin: 3vw;
-    width: 12vh;
-  }
-  /* gorros */
-  .gorros-grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    text-align: center;
-  }
-  .gorro img {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    height: 20vh;
+    left: 80%;
   }
 }
-@media (min-width: 501px) and (max-width: 989px) {
-  .logo .logo-img {
-    width: 30%;
-    position: absolute;
-    top: 30%;
-    left: 20%;
-  }
+
+.carousel {
+  width: 30vh;
+  position: absolute;
+  top: 58vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 760px) {
   .carousel {
-    width: 40%;
+    width: 20vw;
+    min-width: 18vw;
     position: absolute;
-    top: 60%;
-    left: 65%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* Nosotros */
-  .nosotrostext {
-    font-family: "Merriweather", serif;
-    font-size: 22px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.84);
-    margin-top: 20%;
-    margin: 10%;
-  }
-  .spotifybar {
-    max-height: 390px;
-    position: absolute;
-    width: 80vw;
-    height: 400px;
-    left: 10%;
-  }
-  /* skates */
-  .grid-skates {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column 3;
-    margin-top: 90px;
-    gap: 15%;
-  }
-  .grid-skates .skate {
-    width: 12vh;
-  }
-  .textoshapes {
-    position: relative;
-    font-family: "Merriweather", serif;
-    text-align: center;
-    margin-top: 50px;
-  }
-  .textoshapes .shapes {
-    font-size: 3vh;
-  }
-  .textoshapes .laminas {
-    font-size: 2vh;
-  }
-  /* spots */
-  .map-grid-container {
-    display: flex;
-    justify-content: center;
-    height: 20vw;
-    margin: 10px;
-  }
-  .map-grid-container .map-grid {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    margin-top: 5vw;
-  }
-  .map-grid-container .map-grid .map {
-    padding: 10px;
-    height: 25vh;
-    width: 80vw;
-    border-radius: 3vh;
-  }
-  /* camisetas / buzos */
-  .contenedor-grids {
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-  }
-  .contenedor-grids .grids-ind {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-  .contenedor-grids .grids-ind div img {
-    transition: transform 0.4s;
-    margin: 2vw;
-    width: 14vh;
-  }
-  /* gorros */
-  .gorros-grid {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    text-align: center;
-  }
-  .gorro img {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    height: 20vh;
+    top: 50vh;
+    left: 30%;
   }
 }
-/* main web */
+
+/* Nosotros */
+.nosotrostext {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.84);
+  margin-top: 20%;
+  margin: 10%;
+}
+
+.spotifybar {
+  max-height: 50vh;
+  min-height: 40vh !important;
+  position: absolute;
+  width: 80vw;
+  height: 45vh;
+  left: 10%;
+  top: 43%;
+}
+
+/* skates */
+.grid-skates {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column 3;
+  margin: 90px 10px 0 10px;
+  gap: 10vw;
+}
+.grid-skates .skate {
+  width: 13vh;
+  min-width: 7vh;
+}
+
+.textoshapes {
+  position: relative;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  margin-top: 50px;
+}
+.textoshapes .shapes {
+  font-size: 3vh;
+}
+.textoshapes .laminas {
+  font-size: 2vh;
+}
+
+/* spots */
+.map-grid-container {
+  display: flex;
+  justify-content: center;
+  height: 30vw;
+  margin: 10px;
+}
+.map-grid-container .map-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-top: 7%;
+}
 @media (min-width: 990px) {
-  .logo .logo-img {
-    z-index: -1;
-    width: 15%;
-    position: absolute;
-    top: 15%;
-    left: 5%;
-  }
-  .carousel {
-    z-index: -10;
-    width: 50vh;
-    position: absolute;
-    top: 140px;
-    left: 60%;
-  }
-  /* Nosotros */
-  .nosotrostext {
-    font-family: "Merriweather", serif;
-    font-size: 2.2vw;
-    text-align: center;
-    margin: 50px;
-    margin-left: 15%;
-    color: rgba(0, 0, 0, 0.84);
-  }
-  .spotifybar {
-    position: absolute;
-    width: 80vw;
-    height: 50vh;
-    left: 10%;
-  }
-  /* skates */
-  .grid-skates {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    flex-direction: column 3;
-    top: 30%;
-    margin: auto auto auto 20%;
-    gap: 25%;
-  }
-  .grid-skates .skate {
-    width: 14vh;
-  }
-  .textoshapes {
-    font-family: "Merriweather", serif;
-    text-align: right;
-    margin-right: 5%;
-    position: relative;
-    top: 5vh;
-    margin: 2% 5%;
-  }
-  .textoshapes .shapes {
-    font-size: 2.2vw;
-  }
-  .textoshapes .laminas {
-    font-size: 1.2vw;
-  }
-  /* spots */
-  .map-grid-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-  }
   .map-grid-container .map-grid {
-    display: flex;
-    flex-direction: column 3;
-    gap: 5%;
+    grid-template-columns: repeat(3, 1fr);
   }
+}
+.map-grid-container .map-grid .map {
+  height: 25vh;
+  width: 80vw;
+  padding: 8px;
+  border-radius: 5vh;
+}
+@media (min-width: 990px) {
   .map-grid-container .map-grid .map {
     width: 30vw;
-    height: 45vh;
+    height: 55vh;
     border-radius: 20px;
   }
-  /* camisetas / buzos */
+}
+
+/* camisetas / buzos / gorros */
+.contenedor-grids {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 760px) {
   .contenedor-grids {
-    display: flex;
-    justify-content: center;
     align-items: center;
     height: 95vh;
   }
+}
+.contenedor-grids .grids-ind {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+@media (min-width: 760px) {
   .contenedor-grids .grids-ind {
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+}
+.contenedor-grids .grids-ind div img {
+  transition: transform 0.4s;
+  margin-inline: 8vw;
+  margin-block: 2vh;
+  width: 13vh;
+}
+@media (min-width: 760px) {
   .contenedor-grids .grids-ind div img {
     transition: transform 0.4s;
-    margin: 2vw;
-    width: 11vw;
-  }
-  /* gorros */
-  .gorros-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-    text-align: center;
-    gap: 10%;
-    margin: 0 10% 0 10%;
-  }
-  .gorros-grid .gorro img {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    height: 16vw;
+    margin-inline: 2vw;
+    width: 23vh;
   }
 }
-/* footer phone*/
-@media (max-width: 500px) {
-  .redes {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-    top: 90%;
-    margin: 10px;
-  }
-  .redes a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 3vh;
-  }
-  .redes a:hover {
-    transition: 0.15s;
-    transform: scale(1.1);
-    filter: invert(30%);
-  }
+
+.redes {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  top: 94%;
 }
-/* footer tablet */
-@media (min-width: 501px) and (max-width: 989px) {
-  .redes {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    gap: 8%;
-    top: 90%;
-    margin: 10px;
-  }
-  .redes a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 3vh;
-  }
-  .redes a:hover {
-    transition: 0.15s;
-    transform: scale(1.1);
-    filter: invert(30%);
-  }
+.redes a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 3vh;
 }
-/* footer web */
-@media (min-width: 990px) {
-  .redes {
-    position: fixed;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    gap: 8%;
-    top: 95%;
-  }
-  .redes a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 3vh;
-  }
-  .redes a:hover {
-    transition: 0.15s;
-    transform: scale(1.1);
-    filter: invert(30%);
-  }
+.redes a:hover {
+  transition: 0.15s;
+  transform: scale(1.1);
+  filter: invert(30%);
 }
 
 /*# sourceMappingURL=style.css.map */

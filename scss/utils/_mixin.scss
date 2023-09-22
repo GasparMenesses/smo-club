@@ -1,0 +1,36 @@
+
+// grids-indumentaria
+@mixin grids-indumentaria {
+    display: flex;
+    justify-content: center;
+    @media (min-width:760px) {
+        align-items: center;
+        height: 95vh;
+    }
+}
+
+@mixin grids-ind-indumentaria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    @media (min-width:760px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@mixin img-grid-indumentaria {
+    transition: transform 0.4s;
+    margin-inline: 8vw;
+    margin-block: 2vh;
+    width: 13vh;
+    @media (min-width:760px) {
+        transition: transform 0.4s;
+        margin-inline: 2vw;
+        width: 23vh;
+    }
+}
+
+
+
+
