@@ -27,7 +27,8 @@
     @media (min-width:760px) {
         transition: transform 0.4s;
         margin-inline: 2vw;
-        width: 23vh;
+        width: 20vw;
+        max-width: 230px;
     }
 }
 

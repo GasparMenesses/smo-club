@@ -1,9 +1,7 @@
 body {
   background-image: url(../images/bg-images/pexels-jess-loiterton-4321836.jpg);
-}
-
-.carousel .slide .carousel .carouse-inner .carousel-item a .dropdown-item {
-  color: azure !important;
+  background-size: 1800px;
+  background-repeat: no-repeat;
 }
 
 .logo .logo-img {
@@ -50,7 +48,7 @@ body {
 
 .spotifybar {
   max-height: 50vh;
-  min-height: 40vh !important;
+  min-height: 40vh;
   position: absolute;
   width: 80vw;
   height: 45vh;
@@ -87,6 +85,7 @@ body {
 
 /* spots */
 .map-grid-container {
+  position: relative;
   display: flex;
   justify-content: center;
   height: 30vw;
@@ -148,7 +147,8 @@ body {
   .contenedor-grids .grids-ind div img {
     transition: transform 0.4s;
     margin-inline: 2vw;
-    width: 23vh;
+    width: 20vw;
+    max-width: 230px;
   }
 }
 
@@ -159,7 +159,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 5%;
-  top: 730px;
+  top: 850px;
 }
 .redes a {
   color: black;

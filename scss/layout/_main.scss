@@ -43,7 +43,7 @@
 
 .spotifybar {
   max-height: 50vh;
-  min-height: 40vh !important;
+  min-height: 40vh;
   position: absolute;
   width: 80vw;
   height: 45vh;
@@ -82,6 +82,7 @@
 
 /* spots */
 .map-grid-container {
+  position: relative;
   display: flex;
   justify-content: center;
   height: 30vw;
