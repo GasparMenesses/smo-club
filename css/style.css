@@ -3,6 +3,11 @@ body {
   background-size: 2000px;
 }
 
+.map-grid-container, .grid-skates {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar-personal {
   background-color: rgb(47, 46, 54);
 }
@@ -13,13 +18,19 @@ body {
   margin-right: 3vw;
 }
 .navbar-personal a:hover {
-  color: rgb(240, 248, 255);
+  color: rgba(240, 248, 255, 0.474);
 }
 .navbar-personal a:active {
   transform: scale(1.1);
   color: rgb(240, 248, 255);
 }
-.navbar-personal .yo {
+.navbar-personal .elementos-menu {
+  background-color: rgb(47, 46, 54);
+}
+.navbar-personal .elementos-menu li:hover a {
+  background-color: rgba(29, 29, 29, 0.182);
+}
+.navbar-personal .elementos-menu:active {
   background-color: rgb(47, 46, 54);
 }
 
@@ -46,7 +57,7 @@ body {
   width: 25vw;
   min-width: 260px;
   display: block;
-  margin: 10vh auto;
+  margin: 11vh auto 5vh;
   z-index: 3;
 }
 
@@ -73,8 +84,6 @@ body {
 /* skates */
 .grid-skates {
   position: relative;
-  display: flex;
-  justify-content: center;
   flex-direction: column 3;
   margin: 110px 10px 0 10px;
   gap: 10vw;
@@ -91,17 +100,15 @@ body {
   margin-top: 50px;
 }
 .textoshapes .shapes {
-  font-size: 4vh;
+  font-size: 3.5vh;
 }
 .textoshapes .laminas {
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 
 /* spots */
 .map-grid-container {
   position: relative;
-  display: flex;
-  justify-content: center;
   height: 30vw;
   margin: 10px 0 500px 0px;
 }
@@ -167,7 +174,7 @@ body {
   .contenedor-grids .grids-ind div img {
     transition: transform 0.4s;
     margin-inline: 2vw;
-    width: 20vw;
+    width: 13vw;
     max-width: 230px;
   }
 }

@@ -6,16 +6,25 @@
         font-family: $Fuente;
         color: rgba(240, 248, 255, 0.773);
         margin-right: 3vw;
+        &:hover {
+          color: rgba(240, 248, 255, 0.474);
+        }
+        &:active {
+          transform: scale(1.1);
+          color: rgb(240, 248, 255) ;
+        }
       }
-      a:hover {
-        color: rgb(240, 248, 255);
-      }
-      a:active {
-        transform: scale(1.1);
-        color: rgb(240, 248, 255) ;
-      }
-      .yo {
+      
+      .elementos-menu {
         background-color: rgb(47, 46, 54);
+        li:hover {
+          a {
+            background-color: rgba(29, 29, 29, 0.182);
+          }
+        }
+        &:active {
+          background-color: rgb(47, 46, 54);
+        }
       }
     }
 

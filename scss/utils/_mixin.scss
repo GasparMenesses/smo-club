@@ -1,5 +1,6 @@
+// mixin
 
-// grids-indumentaria
+
 @mixin grids-indumentaria {
     display: flex;
     justify-content: center;
@@ -31,7 +32,7 @@
     @media (min-width:760px) {
         transition: transform 0.4s;
         margin-inline: 2vw;
-        width: 20vw;
+        width: 13vw;
         max-width: 230px;
     }
 }

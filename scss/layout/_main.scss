@@ -17,7 +17,7 @@
   width: 25vw;
   min-width: 260px;
   display: block;
-  margin: 10vh auto;
+  margin: 11vh auto 5vh;
   z-index: 3;
 }
 
@@ -44,9 +44,8 @@
 
 /* skates */
 .grid-skates {
+  @extend %flex-center;
   position: relative;
-  display: flex;
-  justify-content: center;
   flex-direction: column 3;
   margin: 110px 10px 0 10px;
   gap: 10vw;
@@ -63,19 +62,18 @@
   margin-top: 50px;
 
   .shapes {
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
 
   .laminas {
-    font-size: 3vh;
+    font-size: 2.5vh;
   }
 }
 
 /* spots */
 .map-grid-container {
+  @extend %flex-center;
   position: relative;
-  display: flex;
-  justify-content: center;
   height: 30vw;
   margin: 10px 0 500px 0px;
 
